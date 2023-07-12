@@ -1,6 +1,6 @@
 SELECT * FROM payment JOIN paymenttype pt ON pt.id = payment.type_id WHERE pt.name LIKE 'MONTHLY';
 
-SELECT * FROM marks WHERE subject_id IN (SELECT id FROM subject WHERE name = 'Art');
+SELECT * FROM mark WHERE subject_id IN (SELECT id FROM subject WHERE name = 'Art');
 
 SELECT * FROM student JOIN payment p ON p.student_id = student.id JOIN paymenttype pt ON pt.id = p.type_id WHERE p.name = 'WEEKLY';
 
